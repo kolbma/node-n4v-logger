@@ -1,8 +1,8 @@
 import * as fs from 'fs';
 import 'jasmine';
-import { Logger } from '../logger';
 import { Config } from 'n4v-config';
-import { ILoggerConfig } from '../i_logger_config';
+import { Logger } from '../index';
+import { ILoggerConfig } from '../index';
 import { LoggerRegistry } from '../logger_registry';
 
 const cfgfile = './test/config.json';
