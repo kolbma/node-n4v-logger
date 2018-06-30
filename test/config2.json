@@ -1,0 +1,42 @@
+{
+  "log": {
+    "logdir": "./test-output/",
+    "loglevelfiles": "error",
+    "loglevels": [{
+        "level": "debug",
+        "name": "testnotrace",
+        "stdoutlevel": "error"
+      },
+      {
+        "level": "debug",
+        "name": "testdebug",
+        "stdoutlevel": "error"
+      },
+      {
+        "level": "debug",
+        "name": "testinfodebug",
+        "stdoutlevel": "error"
+      },
+      {
+        "level": "info",
+        "name": "testinfo",
+        "stdoutlevel": "error"
+      },
+      {
+        "level": "info",
+        "name": "test/slash",
+        "stdoutlevel": "error"
+      },
+      {
+        "level": "info",
+        "name": "test\\backslash",
+        "stdoutlevel": "error"
+      }
+    ],
+    "loglevelstdout": "error",
+    "logtofiles": true,
+    "logtostdout": true,
+    "reopensigint": true,
+    "rereadconfigonsigint": true
+  }
+}
