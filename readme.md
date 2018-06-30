@@ -89,7 +89,8 @@ Sample config:
 ### TypeScript
 
 ``` TypeScript
-import * as Logger from 'n4v-logger';
+import * as http from 'http';
+import { Logger } from 'n4v-logger';
 
 const cfgfile = './path/config.json';
 const log = Logger.getLogger('test-logger', cfgfile);
@@ -101,7 +102,8 @@ log.reqinfo(req, 'Some message: %s', more);
 ### JavaScript
 
 ``` JavaScript
-var Logger = require('n4v-logger');
+var http = require('http');
+var Logger = require('n4v-logger').Logger;
 
 var cfgfile = './path/config.json';
 var log = Logger.getLogger('test-logger', cfgfile);
