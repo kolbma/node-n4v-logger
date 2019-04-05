@@ -1,4 +1,3 @@
-/// <reference types="bunyan" />
 import * as LoggerImpl from 'bunyan';
 import { IExtLogger } from './i_ext_logger';
 /**
