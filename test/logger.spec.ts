@@ -32,7 +32,7 @@ describe('logger', () => {
       'testinfodebug', 'testinfo', 'test_slash', 'test_backslash', 'teststdout',
       'sigint']) {
       try {
-        fs.unlinkSync('./test-output/' + name + '.log')
+        fs.unlinkSync('./test-output/' + name + '.log');
       } catch (err) { }
     }
     try {
