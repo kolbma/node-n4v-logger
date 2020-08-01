@@ -1,6 +1,6 @@
 {
   "name": "n4v-logger",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Easy configurable logger class for bunyan",
   "main": "index.js",
   "types": "index.d.ts",

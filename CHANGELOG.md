@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/kolbma/node-n4v-logger/compare/v0.0.3...v0.1.0) (2020-08-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** minimum node version v10
+
+* **deps:** update dependencies ([68937b3](https://github.com/kolbma/node-n4v-logger/commit/68937b3ad7330592243307b2d687770a57249993))
+
 ### [0.0.3](https://github.com/kolbma/node-n4v-logger/compare/v0.0.2...v0.0.3) (2019-10-31)
 
 
