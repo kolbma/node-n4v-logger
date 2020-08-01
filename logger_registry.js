@@ -1,5 +1,13 @@
 "use strict";
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.LoggerRegistry = void 0;
 var LoggerImpl = require("bunyan");
 var fs = require("fs");
 var n4v_config_1 = require("n4v-config");
@@ -68,35 +76,35 @@ var LoggerRegistry = /** @class */ (function () {
             for (var _i = 2; _i < arguments.length; _i++) {
                 subst[_i - 2] = arguments[_i];
             }
-            logger.trace.apply(logger, [LoggerRegistry.parseRequest(req, true), msg].concat(subst));
+            logger.trace.apply(logger, __spreadArrays([LoggerRegistry.parseRequest(req, true), msg], subst));
         };
         logger.reqdebug = function (req, msg) {
             var subst = [];
             for (var _i = 2; _i < arguments.length; _i++) {
                 subst[_i - 2] = arguments[_i];
             }
-            logger.debug.apply(logger, [LoggerRegistry.parseRequest(req, true), msg].concat(subst));
+            logger.debug.apply(logger, __spreadArrays([LoggerRegistry.parseRequest(req, true), msg], subst));
         };
         logger.reqinfo = function (req, msg) {
             var subst = [];
             for (var _i = 2; _i < arguments.length; _i++) {
                 subst[_i - 2] = arguments[_i];
             }
-            logger.info.apply(logger, [LoggerRegistry.parseRequest(req), msg].concat(subst));
+            logger.info.apply(logger, __spreadArrays([LoggerRegistry.parseRequest(req), msg], subst));
         };
         logger.reqwarn = function (req, msg) {
             var subst = [];
             for (var _i = 2; _i < arguments.length; _i++) {
                 subst[_i - 2] = arguments[_i];
             }
-            logger.warn.apply(logger, [LoggerRegistry.parseRequest(req), msg].concat(subst));
+            logger.warn.apply(logger, __spreadArrays([LoggerRegistry.parseRequest(req), msg], subst));
         };
         logger.reqerror = function (req, msg) {
             var subst = [];
             for (var _i = 2; _i < arguments.length; _i++) {
                 subst[_i - 2] = arguments[_i];
             }
-            logger.error.apply(logger, [LoggerRegistry.parseRequest(req), msg].concat(subst));
+            logger.error.apply(logger, __spreadArrays([LoggerRegistry.parseRequest(req), msg], subst));
         };
         LoggerRegistry.loggers.push([name, logger]);
         return logger;

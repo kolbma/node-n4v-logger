@@ -1,5 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var logger_1 = require("./logger");
-exports.Logger = logger_1.Logger;
+Object.defineProperty(exports, "Logger", { enumerable: true, get: function () { return logger_1.Logger; } });
 //# sourceMappingURL=index.js.map

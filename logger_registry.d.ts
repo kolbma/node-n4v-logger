@@ -9,7 +9,7 @@ export declare class LoggerRegistry {
     /**
      * the key in configuration to store the ILoggerConfig
      */
-    static readonly configSubkey: string;
+    static readonly configSubkey = "log";
     /**
      * Object for validation of config
      */
